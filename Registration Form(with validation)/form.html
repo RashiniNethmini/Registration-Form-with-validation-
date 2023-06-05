@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+	<style type="text/css">
+		small{color: red;}
+	</style>
+	<script src="formJS.js"></script>
+</head>
+<body>
+	<h2>Registration Form</h2>
+	<form name="form" action=""  oninput="return validateForm()">
+		<table border="0">
+			<tr>
+				<td align="right"><label for="user_id">User id:</label></td>
+				<td><input type="text" id="user_id" name="user_id" maxlength="12" size="12"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><small id="error1"></small></td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td align="right"><label for="pWord">Password:</label></td>
+				<td><input type="password" id="pWord" name="pWord" maxlength="12" size="12" ></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><small id="error2"></small></td>
+			</tr>
+			<tr>
+				<td align="right"><label for="name">Name:</label></td>
+				<td><input type="text" id="name" name="name" size="50"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><small id="error3"></small></td>
+			</tr>
+			<tr>
+				<td align="right"><label for="address">Address:</label></td>
+				<td><input type="text" id="address" name="addess" size="50"></td>
+			</tr>
+			<tr>
+				<td align="right"><label for="country">Country:</label></td>
+				<td>
+					<select name="country">
+						<option  value="0" disabled selected hidden>(Please select a country)</option>
+						<option value="c1">Sri Lanka</option>
+						<option value="c2">England</option>
+						<option value="c3">Australia</option>
+						<option value="c4">Netherland</option>
+					</select>
+					<small id="error4"></small>
+				</td>
+			</tr>
+			<tr>
+				<td align="right"><label for="z_code">ZIP Code:</label></td>
+				<td><input type="text" id="z_code" name="z_code"></td>
+			</tr>
+			<tr>
+				<td align="right"><label for="email">Email:</label></td>
+				<td><input type="text" id="email" name="email" size="50"></td>
+			</tr>
+				<tr>
+				<td></td>
+				<td><small id="error5"></small></td>
+			</tr>
+			<tr>
+				<td align="right"><label>Sex:</label></td>
+				<td>
+					<input type="radio" id="m" name="s" value="m">
+					<label for="m">Male</label>
+					<input type="radio" id="f" name="s" value="f">
+					<label for="f">Female</label>
+				&nbsp;&nbsp;&nbsp;
+				<small id="error6"></small></td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>	
+				<td align="right"><label>Language:</label></td>
+				<td>
+					<input type="checkbox" id="e1" name="eng" value="eng" class="radio">
+					<label for="eng">English</label>
+					<input type="checkbox" id="e2" name="eng" value="neng" class="radio">
+					<label for="neng">Non English</label>
+					<small id="error7"></small>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" style="vertical-align:top;">About:</td>
+				<td><textarea name="about" rows="6" cols="50"></textarea></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td align="center"><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
